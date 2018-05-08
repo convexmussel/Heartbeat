@@ -28,20 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.loginScreen = new Heartbeat_monitor.LoginScreen();
+            this.signUp = new Heartbeat_monitor.SignUp();
             this.SuspendLayout();
             // 
-            // Form1
+            // loginScreen
+            // 
+            this.loginScreen.Location = new System.Drawing.Point(23, 12);
+            this.loginScreen.Name = "loginScreen";
+            this.loginScreen.Size = new System.Drawing.Size(411, 190);
+            this.loginScreen.TabIndex = 0;
+            // 
+            // signUp
+            // 
+            this.signUp.Location = new System.Drawing.Point(23, 12);
+            this.signUp.Name = "signUp";
+            this.signUp.Size = new System.Drawing.Size(422, 191);
+            this.signUp.TabIndex = 1;
+            // 
+            // Heartbeat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.loginScreen);
+            this.Controls.Add(this.signUp);
+            this.Name = "Heartbeat";
+            this.Text = "Heartbeat";
+          
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+       
+        private LoginScreen loginScreen;
+        private SignUp signUp;
     }
 }
 

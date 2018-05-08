@@ -105,6 +105,7 @@
             this.SignupB.TabIndex = 8;
             this.SignupB.Text = "Sign up";
             this.SignupB.UseVisualStyleBackColor = true;
+            this.SignupB.Click += new System.EventHandler(this.SignupB_Click);
             // 
             // LoginScreen
             // 
@@ -119,7 +120,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.groupBox1);
             this.Name = "LoginScreen";
-            this.Size = new System.Drawing.Size(1298, 824);
+            this.Size = new System.Drawing.Size(422, 191);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,7 +129,7 @@
         #endregion
 
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.Label Namel;
+        private System.Windows.Forms.Label   Namel;
         private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.TextBox PassBox;
         private System.Windows.Forms.Label Hint;

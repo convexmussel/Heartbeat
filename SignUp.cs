@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace Heartbeat_monitor
 {
-    public partial class LoginScreen : UserControl
+    public partial class SignUp : UserControl
     {
         Heartbeat heartbeat;
-        public LoginScreen()
+        public SignUp()
         {
             InitializeComponent();
+        }
+
+        private void ClearBox()
+        {
+            PassBox.Text = "";
+            nameBox.Text = "";
+            AuthenticationBox.Text = "";
         }
 
         public void AddHeartbeat(Heartbeat heartbeat)
@@ -23,25 +30,16 @@ namespace Heartbeat_monitor
             this.heartbeat = heartbeat;
         }
 
-        private void ClearBox()
-        {
-            PassBox.Text = "";
-            nameBox.Text = "";
-        }
-
-        private void SigninB_Click(object sender, EventArgs e)
-        {
-            String name = nameBox.Text;
-            String password = PassBox.Text;
-
-            ClearBox();
-            heartbeat.LoginDatabase(name, password);
-        }
-
-        private void SignupB_Click(object sender, EventArgs e)
+        private void SignUpB_Click(object sender, EventArgs e)
         {
             ClearBox();
-            heartbeat.SwitchUserControll(1);
+            heartbeat.SwitchUserControll(0);
+        }
+
+        private void backB_Click(object sender, EventArgs e)
+        {
+            ClearBox();
+            heartbeat.SwitchUserControll(0);
         }
     }
 }
