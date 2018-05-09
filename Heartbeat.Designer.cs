@@ -34,28 +34,31 @@
             // 
             // loginScreen
             // 
-            this.loginScreen.Location = new System.Drawing.Point(23, 12);
+            this.loginScreen.Location = new System.Drawing.Point(31, 15);
+            this.loginScreen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.loginScreen.Name = "loginScreen";
-            this.loginScreen.Size = new System.Drawing.Size(411, 190);
+            this.loginScreen.Size = new System.Drawing.Size(548, 234);
             this.loginScreen.TabIndex = 0;
+            this.loginScreen.Load += new System.EventHandler(this.loginScreen_Load);
             // 
             // signUp
             // 
-            this.signUp.Location = new System.Drawing.Point(23, 12);
+            this.signUp.Location = new System.Drawing.Point(31, 15);
+            this.signUp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.signUp.Name = "signUp";
-            this.signUp.Size = new System.Drawing.Size(422, 191);
+            this.signUp.Size = new System.Drawing.Size(563, 235);
             this.signUp.TabIndex = 1;
             // 
             // Heartbeat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.loginScreen);
             this.Controls.Add(this.signUp);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Heartbeat";
             this.Text = "Heartbeat";
-          
             this.ResumeLayout(false);
 
         }

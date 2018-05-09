@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Heartbeat_monitor
 {
@@ -32,6 +32,8 @@ namespace Heartbeat_monitor
             //connect to database with credentials
             //incorrect give error message
             //else continue to data
+            Console.WriteLine("username: "+ username);
+            Console.WriteLine("Password: "+ password);
             
         }
 
@@ -49,6 +51,9 @@ namespace Heartbeat_monitor
             //add user to database
         }
 
-     
+        private void loginScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
