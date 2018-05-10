@@ -18,10 +18,17 @@ namespace Heartbeat_monitor
         public Heartbeat()
         {
             InitializeComponent();
-            loginScreen.AddHeartbeat(this);
-            signUp.AddHeartbeat(this);
+            Init();
         }
 
+        public void Init()
+        {
+            //add reverense from this form to other panels
+            loginScreen.AddHeartbeat(this);
+            signUp.AddHeartbeat(this);
+
+            userControl11.Visible = false;
+        }
         private void InitialiseConnectionDatabase()
         {
             //connect to database
@@ -34,6 +41,9 @@ namespace Heartbeat_monitor
             //else continue to data
             Console.WriteLine("username: "+ username);
             Console.WriteLine("Password: "+ password);
+
+            //succesfull
+            SwitchUserControll(2);
             
         }
 
@@ -43,6 +53,7 @@ namespace Heartbeat_monitor
             switch (index) { 
                 case 0: loginScreen.BringToFront(); break;
                 case 1: signUp.BringToFront(); break;
+                case 2: userControl11.Visible = true; userControl11.BringToFront(); break;
             }
         }
 
