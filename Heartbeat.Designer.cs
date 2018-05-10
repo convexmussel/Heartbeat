@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControl11 = new Heartbeat_monitor.UserControl1();
             this.loginScreen = new Heartbeat_monitor.LoginScreen();
             this.signUp = new Heartbeat_monitor.SignUp();
+            this.userControl11 = new Heartbeat_monitor.UserControl1();
             this.SuspendLayout();
-            // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(11, 11);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(2);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(390, 304);
-            this.userControl11.TabIndex = 2;
             // 
             // loginScreen
             // 
@@ -57,6 +49,14 @@
             this.signUp.Name = "signUp";
             this.signUp.Size = new System.Drawing.Size(422, 191);
             this.signUp.TabIndex = 1;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(23, 11);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(2);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(523, 518);
+            this.userControl11.TabIndex = 2;
             // 
             // Heartbeat
             // 

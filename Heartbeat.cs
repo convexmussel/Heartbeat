@@ -14,7 +14,7 @@ namespace Heartbeat_monitor
 {
     public partial class Heartbeat : Form
     {
-        SqlConnection sqlConnection;
+        
         public Heartbeat()
         {
             InitializeComponent();
@@ -26,6 +26,7 @@ namespace Heartbeat_monitor
             //add reverense from this form to other panels
             loginScreen.AddHeartbeat(this);
             signUp.AddHeartbeat(this);
+            userControl11.AddHeartbeat(this);
 
             userControl11.Visible = false;
         }
