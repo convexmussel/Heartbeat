@@ -29,6 +29,7 @@ namespace Heartbeat_monitor
         {
             this.lineChart.Series["Series1"].Points.AddXY(0,20);
             this.lineChart.Series["Series1"].Points.AddXY(50, 1809);
+            
         }
 
         private void backB_Click(object sender, EventArgs e)

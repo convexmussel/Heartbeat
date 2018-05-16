@@ -16,6 +16,7 @@ namespace Heartbeat_monitor
         public LoginScreen()
         {
             InitializeComponent();
+           
         }
 
         public void AddHeartbeat(Heartbeat heartbeat)

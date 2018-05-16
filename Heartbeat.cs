@@ -17,6 +17,7 @@ namespace Heartbeat_monitor
         
         public Heartbeat()
         {
+           
             InitializeComponent();
             Init();
         }

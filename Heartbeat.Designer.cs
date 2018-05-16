@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.userControl11 = new Heartbeat_monitor.UserControl1();
             this.loginScreen = new Heartbeat_monitor.LoginScreen();
             this.signUp = new Heartbeat_monitor.SignUp();
-            this.userControl11 = new Heartbeat_monitor.UserControl1();
             this.SuspendLayout();
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(0, -6);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1196, 726);
+            this.userControl11.TabIndex = 2;
             // 
             // loginScreen
             // 
-            this.loginScreen.Location = new System.Drawing.Point(23, 12);
-            this.loginScreen.Margin = new System.Windows.Forms.Padding(4);
+            this.loginScreen.Location = new System.Drawing.Point(31, 15);
+            this.loginScreen.Margin = new System.Windows.Forms.Padding(5);
             this.loginScreen.Name = "loginScreen";
-            this.loginScreen.Size = new System.Drawing.Size(411, 190);
+            this.loginScreen.Size = new System.Drawing.Size(548, 234);
             this.loginScreen.TabIndex = 0;
             this.loginScreen.Load += new System.EventHandler(this.loginScreen_Load);
             // 
             // signUp
             // 
-            this.signUp.Location = new System.Drawing.Point(23, 12);
-            this.signUp.Margin = new System.Windows.Forms.Padding(4);
+            this.signUp.Location = new System.Drawing.Point(31, 15);
+            this.signUp.Margin = new System.Windows.Forms.Padding(5);
             this.signUp.Name = "signUp";
-            this.signUp.Size = new System.Drawing.Size(422, 191);
+            this.signUp.Size = new System.Drawing.Size(563, 235);
             this.signUp.TabIndex = 1;
-            // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(23, 11);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(2);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(523, 518);
-            this.userControl11.TabIndex = 2;
             // 
             // Heartbeat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 474);
+            this.ClientSize = new System.Drawing.Size(1173, 748);
             this.Controls.Add(this.userControl11);
             this.Controls.Add(this.loginScreen);
             this.Controls.Add(this.signUp);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Heartbeat";
             this.Text = "Heartbeat";
             this.ResumeLayout(false);
